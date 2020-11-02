@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" styleClass="parent" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.dialogs.myproperties.MyPropertiesController">
+   <right>
+      <VBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="rightButton" mnemonicParsing="false" onAction="#rightButtonClicked" prefHeight="29.0" prefWidth="20.0" styleClass="arrowButton">
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <left>
+      <VBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="leftButton" mnemonicParsing="false" onAction="#leftButtonClicked" prefHeight="29.0" prefWidth="20.0" rotate="180.0" styleClass="arrowButton">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="100.0" styleClass="field" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" styleClass="field" stylesheets="@../../../style/fields.css">
+                     <center>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="7.0" styleClass="propertyCard" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane>
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Price $" />
+                                          <Label fx:id="priceLabel" text="50" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label text="Rent $" />
+                                          <Label fx:id="rentLabel" text="50" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <Label text="Mortgage value $" />
+                                    <Label fx:id="mortgageLabel" text="50" />
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <GridPane>
+                                       <children>
+                                          <Label text="With 1 House" />
+                                          <Label text="With 2 Houses" GridPane.rowIndex="1" />
+                                          <Label text="With 3 Houses" GridPane.rowIndex="2" />
+                                          <Label text="With 4 Houses" GridPane.rowIndex="3" />
+                                          <Label text="With 1 Hotel" GridPane.rowIndex="4" />
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                             <children>
+                                                <Label text="\$" />
+                                                <Label fx:id="firstHouseLabel" text="50" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <children>
+                                                <Label text="\$" />
+                                                <Label fx:id="secondHouseLabel" text="50" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <children>
+                                                <Label text="\$" />
+                                                <Label fx:id="thirdHouseLabel" text="50" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <children>
+                                                <Label text="\$" />
+                                                <Label fx:id="fourthHouseLabel" text="50" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <children>
+                                                <Label text="\$" />
+                                                <Label fx:id="hotelLabel" text="50" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Label text="One house costs $" />
+                                          <Label fx:id="housePriceLabel" text="50" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Label text="One hotel costs $" />
+                                          <Label fx:id="hotelPriceLabel" text="100" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </center>
+                     <top>
+                        <VBox fx:id="header" alignment="CENTER" prefHeight="60.0" style="-fx-border-color: black; -fx-border-width: 2;" styleClass="red" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="TOP_RIGHT" minHeight="20.0" />
+                              <Label fx:id="titleLabel" text="Property">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" minHeight="20.0">
+                                 <children>
+                                    <Label text="Owned by: " />
+                                    <Label fx:id="usernameLabel" text="Hawkis98" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </top>
+                  </BorderPane>
+               </children></VBox>
+            <VBox spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buyUpgradeClicked" text="Buy Upgrade" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sellClicked" prefHeight="29.0" prefWidth="59.0" text="Sell" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#closeWindowClicked" text="Close window" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="600.0" styleClass="parent" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.feedback.FeedbackController">
+   <children>
+      <Label fx:id="infoLabel" styleClass="infolabel" text="Please fill in the fields below">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="textField" maxWidth="300.0" promptText="Tittle">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TextArea fx:id="textArea" maxWidth="300.0" promptText="Enter your message here" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </TextArea>
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button fx:id="sendButton" alignment="CENTER" maxWidth="300.0" mnemonicParsing="false" onAction="#sendButtonPressed" text="Send" />
+            <Button alignment="CENTER" maxWidth="300.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>

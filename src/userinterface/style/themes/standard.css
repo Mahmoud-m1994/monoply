@@ -1,0 +1,19 @@
+.parent {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #2875c3, #2285e9);
+}
+
+.infolabel, .button {
+    -fx-text-fill: white;
+}
+
+.button, .color-picker {
+    -fx-background-color:  linear-gradient(from 25% 25% to 100% 100%, #247803, #278b00);
+    -fx-border-color: #175000;
+}
+
+.text-field, .text-area, .check-box .box {
+  -fx-border-color: #313131;
+}
+.header {
+    -fx-text-fill: white;
+}

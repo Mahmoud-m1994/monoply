@@ -1,0 +1,5 @@
+.parent                { -fx-background-color: #cc3333ff;}
+.infolabel, .button    { -fx-text-fill: #ffccccff;}
+.button, .color-picker { -fx-background-color: #990000ff;}
+.progess-indicator     { -fx-progress-color: #990000ff;}
+.text-field, .text-area, .check-box .box, .button { -fx-border-color: #1a1a1aff;}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="600.0" spacing="20.0" styleClass="parent" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.settings.SettingsController">
+   <opaqueInsets>
+      <Insets left="5.0" />
+   </opaqueInsets>
+   <children>
+      <Label fx:id="infoLabel" text="Fill in fields before pressing the button" textFill="WHITE">
+         <VBox.margin>
+            <Insets bottom="20.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <PasswordField fx:id="oldPasswordField" maxWidth="200.0" promptText="Old Password" />
+      <PasswordField fx:id="passwordField" maxWidth="200.0" promptText="New Password">
+         <VBox.margin>
+            <Insets bottom="-10.0" top="-10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <PasswordField fx:id="conPasswordField" maxWidth="200.0" promptText="Confirm New Password">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></PasswordField>
+      <Button fx:id="changePasswordButton" maxWidth="200.0" mnemonicParsing="false" onAction="#changePasswordButtonClicked" text="Change Password">
+         <VBox.margin>
+            <Insets bottom="20.0" top="-10.0" />
+         </VBox.margin>
+      </Button>
+      <TextField fx:id="nicknameField" maxWidth="200.0" promptText="New Nickname" />
+      <Button fx:id="changeNicknameButton" maxWidth="200.0" mnemonicParsing="false" onAction="#changeNicknameButtonClicked" text="Change Nickname">
+         <VBox.margin>
+            <Insets bottom="20.0" top="-10.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="backButton" maxHeight="39.0" maxWidth="200.0" mnemonicParsing="false" onAction="#backButtonClicked" text="Back">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

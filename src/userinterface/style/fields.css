@@ -1,0 +1,197 @@
+.green {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #399800, #4fc906);
+}
+
+.purple {
+    -fx-background-color:  linear-gradient(from 25% 25% to 100% 100%, #c300d4, #dc02f0);
+}
+
+.yellow {
+    -fx-background-color:  linear-gradient(from 25% 25% to 100% 100%, #d6d400, #edeb00);
+}
+
+.darkblue {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #0162b5, #0077dc);
+}
+
+.orange {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #dc8100, #f89200);
+}
+
+.red {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #d40000, #f91818);
+}
+
+.blue {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #00d8db, #00bdfb);
+}
+
+.whitePanel {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #e3e3e3);
+}
+
+.field {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #e3e3e3);
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: green;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+.hyperlink {
+    -fx-text-fill: black;
+    -fx-border-color: transparent;
+    -fx-underline: false;
+}
+
+.propertyCard {
+    -fx-font-size: 16px;
+}
+
+-dice {
+    -fx-border-color: black;
+}
+
+.button {
+    -fx-border-color: black;
+}
+
+#field0 {
+    -fx-background-image: url("../resources/pictures/fields/go.png");
+    -fx-background-size: 80% 80%;
+}
+
+#field1 {
+    -fx-background-image: url("../resources/pictures/fields/field1.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field2 {
+    -fx-background-image: url("../resources/pictures/fields/field2.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field3 {
+    -fx-background-image: url("../resources/pictures/fields/field3.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field4 {
+    -fx-background-image: url("../resources/pictures/fields/field4.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field5 {
+    -fx-background-image: url("../resources/pictures/fields/field5.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field6 {
+    -fx-background-image: url("../resources/pictures/fields/field6.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field7 {
+    -fx-background-image: url("../resources/pictures/fields/samf.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field8 {
+    -fx-background-image: url("../resources/pictures/fields/field8.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field9 {
+    -fx-background-image: url("../resources/pictures/fields/field9.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field10 {
+    -fx-background-image: url("../resources/pictures/fields/field10.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field11 {
+    -fx-background-image: url("../resources/pictures/fields/field11.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field12 {
+    -fx-background-image: url("../resources/pictures/fields/field12.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field13 {
+    -fx-background-image: url("../resources/pictures/fields/field13.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field14 {
+    -fx-background-image: url("../resources/pictures/fields/tore.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field15 {
+    -fx-background-image: url("../resources/pictures/fields/field15.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field16 {
+    -fx-background-image: url("../resources/pictures/fields/field16.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field17 {
+    -fx-background-image: url("../resources/pictures/fields/field17.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field18 {
+    -fx-background-image: url("../resources/pictures/fields/field18.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field19 {
+    -fx-background-image: url("../resources/pictures/fields/field19.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field20 {
+    -fx-background-image: url("../resources/pictures/fields/field20.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field21 {
+    -fx-background-image: url("../resources/pictures/fields/quiz.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field22 {
+    -fx-background-image: url("../resources/pictures/fields/field22.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field23 {
+    -fx-background-image: url("../resources/pictures/fields/field23.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field24 {
+    -fx-background-image: url("../resources/pictures/fields/field24.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field25 {
+    -fx-background-image: url("../resources/pictures/fields/field25.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field26 {
+    -fx-background-image: url("../resources/pictures/fields/field26.png");
+    -fx-background-size: 100% 100%;
+}
+
+#field27 {
+    -fx-background-image: url("../resources/pictures/fields/field27.png");
+    -fx-background-size: 100% 100%;
+}

@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" spacing="15.0" styleClass="parent" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.board.BoardController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../../style/fields.css">
+         <top>
+            <GridPane fx:id="topFields" gridLinesVisible="true" prefHeight="100.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="75.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="purple" />
+                           </styleClass></Pane>
+                        <Pane onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="purple" />
+                           </styleClass></Pane>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field">
+                           <children>
+                              <TilePane fx:id="field15" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1">
+                           <children>
+                              <TilePane fx:id="field16" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" GridPane.columnIndex="2">
+                     <children>
+                        <Pane onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="200.0" styleClass="whitePanel" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Pane onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="yellow" />
+                           </styleClass></Pane>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="field">
+                           <children>
+                              <TilePane fx:id="field17" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1">
+                           <children>
+                              <TilePane fx:id="field18" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="75.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" GridPane.columnIndex="3">
+                     <children>
+                        <Pane onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="yellow" />
+                           </styleClass></Pane>
+                        <Pane onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="yellow" />
+                           </styleClass></Pane>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field">
+                           <children>
+                              <TilePane fx:id="field19" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1">
+                           <children>
+                              <TilePane fx:id="field20" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="75.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <TilePane fx:id="field14" alignment="CENTER" hgap="5.0" prefHeight="200.0" prefWidth="200.0" styleClass="field" vgap="5.0" />
+                  <TilePane fx:id="field21" alignment="CENTER" hgap="5.0" prefHeight="200.0" prefWidth="200.0" styleClass="field" vgap="5.0" GridPane.columnIndex="4" />
+               </children>
+            </GridPane>
+         </top>
+         <bottom>
+            <GridPane fx:id="bottomFields" gridLinesVisible="true" prefHeight="100.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blue" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blue" GridPane.columnIndex="1" />
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field5" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field6" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="75.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" GridPane.columnIndex="2">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePanel" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="blue" GridPane.columnIndex="1" />
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field3" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field4" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="75.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" GridPane.columnIndex="3">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="red" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="red" GridPane.columnIndex="1" />
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field1" alignment="CENTER" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field2" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="75.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <TilePane fx:id="field0" alignment="CENTER" hgap="5.0" prefHeight="200.0" prefWidth="200.0" styleClass="field" vgap="5.0" GridPane.columnIndex="4">
+                     <children>
+                        <ImageView fx:id="redCar" fitHeight="40.0" fitWidth="40.0" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../resources/pictures/pieces/redcar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="blueCar" fitHeight="40.0" fitWidth="40.0" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../resources/pictures/pieces/bluecar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="yellowCar" fitHeight="40.0" fitWidth="40.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/pictures/pieces/yellowcar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="greenCar" fitHeight="40.0" fitWidth="40.0" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../resources/pictures/pieces/greencar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </TilePane>
+                  <TilePane fx:id="field7" alignment="CENTER" hgap="5.0" prefHeight="200.0" prefWidth="200.0" styleClass="field" vgap="5.0" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </bottom>
+         <center>
+            <GridPane alignment="CENTER" styleClass="middleBoard" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox fx:id="field" alignment="BOTTOM_CENTER" rotate="-41.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER" spacing="30.0">
+                           <children>
+                              <Pane fx:id="diceImg1" prefHeight="40" prefWidth="40.0" style="-fx-border-color: black;">
+                                 <children>
+                                    <Label fx:id="leftDiceLabel" layoutX="3.0" layoutY="12.0" />
+                                 </children></Pane>
+                              <Pane fx:id="diceImg2" prefHeight="40" prefWidth="40.0" style="-fx-border-color: black;">
+                                 <children>
+                                    <Label fx:id="rightDiceLabel" layoutX="3.0" layoutY="12.0" />
+                                 </children></Pane>
+                           </children>
+                        </HBox>
+                        <Button fx:id="throwDice" mnemonicParsing="false" onAction="#diceButtonPressed" text="Throw Dice" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <GridPane fx:id="leftFields" prefWidth="118.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane gridLinesVisible="true">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field">
+                           <children>
+                              <TilePane fx:id="field13" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field12" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePanel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="purple" />
+                           </styleClass></Pane>
+                     </children>
+                  </GridPane>
+                  <GridPane gridLinesVisible="true" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field">
+                           <children>
+                              <TilePane fx:id="field11" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field10" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="green" />
+                           </styleClass></Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="green" />
+                           </styleClass></Pane>
+                     </children>
+                  </GridPane>
+                  <GridPane gridLinesVisible="true" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="field">
+                           <children>
+                              <TilePane fx:id="field9" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field8" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="green" />
+                           </styleClass></Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="whitePanel" />
+                           </styleClass></Pane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </left>
+         <right>
+            <GridPane fx:id="rightFields" prefWidth="118.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane gridLinesVisible="true">
+                     <children>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1">
+                           <children>
+                              <TilePane fx:id="field22" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field23" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="orange" />
+                           </styleClass></Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="propertyPanel" />
+                              <String fx:value="orange" />
+                           </styleClass></Pane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane gridLinesVisible="true" GridPane.rowIndex="1">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1">
+                           <children>
+                              <TilePane fx:id="field24" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field25" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePanel" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="darkblue" GridPane.rowIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane gridLinesVisible="true" GridPane.rowIndex="2">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1">
+                           <children>
+                              <TilePane fx:id="field26" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" onMouseClicked="#propertyPressed" prefHeight="200.0" prefWidth="100.0" styleClass="field" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TilePane fx:id="field27" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                              <Label text="Name">
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="whitePanel" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="darkblue" GridPane.rowIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="75.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </right></BorderPane>
+      <VBox spacing="15.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TextArea fx:id="chatField" editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;" wrapText="true" VBox.vgrow="ALWAYS" />
+            <HBox spacing="15.0">
+               <children>
+                  <TextField fx:id="textField" onAction="#sendButtonPressed" promptText="Write a message" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#sendButtonPressed" prefWidth="75.0" styleClass="smallButton" text="Send">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <GridPane alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" text="Houses: 0" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" />
+                  <Label text="Player" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <Label text="Hotels: 0" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label fx:id="infoLabel" text="Money: 1000" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <VBox spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Button fx:id="viewProperties" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#myPropertiesButtonPressed" text="View my properties" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#rulesButtonPressed" text="Rules" HBox.hgrow="ALWAYS">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#optionsButtonPressed" text="Options" HBox.hgrow="ALWAYS">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#logOutButtonPressed" style="-fx-background-color: darkred;" text="Log out" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#startGamePressed" text="Start game" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="endTurn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#endTurnPressed" text="End turn" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="350.0" styleClass="parent" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.dialogs.infodialog.InfoDialogController">
+   <top>
+      <HBox prefHeight="45.0" prefWidth="350.0" styleClass="parent" stylesheets="@../../../style/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="header" prefHeight="42.0" prefWidth="340.0" styleClass="header" text="Label">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="45.0" prefWidth="350.0" styleClass="parent" stylesheets="@../../../style/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="okButton" mnemonicParsing="false" onAction="#okButtonClicked" prefHeight="24.0" prefWidth="53.0" text="OK">
+               <HBox.margin>
+                  <Insets left="260.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <Region prefHeight="113.0" prefWidth="30.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Region prefHeight="113.0" prefWidth="27.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox prefHeight="117.0" prefWidth="293.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="19.0" prefWidth="293.0" style="-fx-background-color: white;" />
+            <TextFlow fx:id="content" prefHeight="102.0" prefWidth="293.0" style="-fx-background-color: white;">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </TextFlow>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

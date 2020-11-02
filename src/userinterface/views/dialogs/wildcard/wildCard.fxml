@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" style="-fx-border-color: black;" styleClass="field" stylesheets="@../../../style/fields.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.dialogs.wildcard.wildCardController">
+    <top>
+        <VBox fx:id="header" alignment="CENTER" prefHeight="60.0" style="-fx-background-color: gold; -fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="TOP_RIGHT" minHeight="20.0">
+                    <children>
+                        <Hyperlink onAction="#closePressed" text="x" textAlignment="RIGHT" />
+                    </children>
+                </HBox>
+                <Label fx:id="titleLabel" text="Wildcard">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER" minHeight="20.0" />
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </VBox>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="7.0" styleClass="propertyCard" BorderPane.alignment="CENTER">
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                    </children>
+                </GridPane>
+                <HBox alignment="CENTER" prefHeight="530.0" prefWidth="270.0">
+                    <children>
+                        <Label fx:id="descriptonLabel" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="175.0" prefWidth="245.0" text="Description &#10; &#10;&#10;&#10;&#10;." />
+                    </children>
+                </HBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+                <VBox alignment="CENTER" spacing="5.0">
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Label text="Transaction is $" />
+                                <Label fx:id="transactionLabel" text="100" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="5.0" />
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>

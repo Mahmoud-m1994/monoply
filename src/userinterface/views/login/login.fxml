@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" styleClass="parent" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.login.LoginController">
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../../resources/pictures/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="infoLabel" styleClass="infolabel" text="Please enter your username and password" textAlignment="CENTER" />
+            <TextField fx:id="usernameField" maxWidth="200.0" onAction="#loginButtonClicked" promptText="Username">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="passwordField" maxWidth="200.0" onAction="#loginButtonClicked" promptText="Password">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <CheckBox fx:id="rememberMeBox" mnemonicParsing="false" onAction="#rememberMeClicked" styleClass="infolabel" text="Remember me">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></CheckBox>
+            <Button fx:id="loginButton" maxWidth="200.0" mnemonicParsing="false" onAction="#loginButtonClicked" text="Log in">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <HBox alignment="CENTER" spacing="50.0">
+               <children>
+                  <Hyperlink onAction="#forgotPasswordClicked" styleClass="infolabel" text="Forgot password" />
+                  <Hyperlink onAction="#createAccountClicked" styleClass="infolabel" text="Create account" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region maxHeight="40.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#optionsButtonClicked" styleClass="smallButton" text="Options" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

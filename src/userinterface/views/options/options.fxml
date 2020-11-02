@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="600.0" spacing="10.0" styleClass="parent" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.options.OptionsController">
+   <children>
+      <Button fx:id="settingsButton" maxWidth="200.0" mnemonicParsing="false" onAction="#settingsButtonPressed" text="Settings" />
+      <Button maxWidth="200.0" mnemonicParsing="false" onAction="#audioButtonPressed" text="Audio" />
+      <Button maxWidth="200.0" mnemonicParsing="false" onAction="#themeButtonPressed" text="Themes" />
+      <Button maxWidth="200.0" mnemonicParsing="false" onAction="#feedbackButtonPressed" text="Send feedback" />
+      <Button maxWidth="200.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" textFill="WHITE">
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</VBox>

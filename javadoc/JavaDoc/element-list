@@ -1,0 +1,25 @@
+unnamed package
+database
+game
+gamelogic
+gamelogic.Tests
+userinterface
+userinterface.views.audio
+userinterface.views.board
+userinterface.views.checkinbox
+userinterface.views.dialogs.buyproperty
+userinterface.views.dialogs.infodialog
+userinterface.views.dialogs.myproperties
+userinterface.views.dialogs.property
+userinterface.views.dialogs.quiz
+userinterface.views.dialogs.wildcard
+userinterface.views.feedback
+userinterface.views.forgotpassword
+userinterface.views.login
+userinterface.views.options
+userinterface.views.preloader
+userinterface.views.register
+userinterface.views.registered
+userinterface.views.settings
+userinterface.views.theme
+userinterface.views.themeeditor

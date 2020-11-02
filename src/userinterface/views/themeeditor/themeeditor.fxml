@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" styleClass="parent" stylesheets="@../../style/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.views.themeeditor.ThemeEditorController">
+   <children>
+      <Label styleClass="infolabel" text="Warning: The application has to be reset before attempting to apply the new theme">
+         <padding>
+            <Insets bottom="8.0" />
+         </padding></Label>
+      <HBox alignment="CENTER" maxWidth="200.0">
+         <children>
+            <Label styleClass="infolabel" text="Background color" />
+            <Region HBox.hgrow="ALWAYS" />
+            <ColorPicker fx:id="backgroundColorPicker" maxWidth="45.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="200.0">
+         <children>
+            <Label styleClass="infolabel" text="Text color" />
+            <Region HBox.hgrow="ALWAYS" />
+            <ColorPicker fx:id="textColorPicker" maxWidth="45.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="200.0">
+         <children>
+            <Label styleClass="infolabel" text="Button color" />
+            <Region HBox.hgrow="ALWAYS" />
+            <ColorPicker fx:id="buttonColorPicker" maxWidth="45.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="200.0">
+         <children>
+            <Label styleClass="infolabel" text="Border color" />
+            <Region HBox.hgrow="ALWAYS" />
+            <ColorPicker fx:id="borderColorPicker" maxWidth="45.0" />
+         </children>
+      </HBox>
+      <Button maxWidth="200.0" mnemonicParsing="false" onAction="#saveThemePressed" text="Save theme" />
+      <Button maxWidth="200.0" mnemonicParsing="false" onAction="#backButtonPressed" text="Back" />
+   </children>
+</VBox>
